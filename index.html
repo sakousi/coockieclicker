@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CookieClicker</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bienvenu sur mon cookie clicker">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+</head>
+
+<body>
+    <div class="cookies">
+        <div class="cookies__textinfo">
+            <h1 class="cookies__textinfo_title">Vous possédez <b id="nbCookies">0</b> cookie<b id="pluriel"></b></h1>
+            <p class="cookies__textinfo_cps">Cookies/per.S: <b id="cps"></b></p>
+        </div>
+        <div class="cookies__cookie">
+            <img class="cookies__cookie_img" src="images/cookies.svg" alt="cookie" id="cookie" onclick="addCookies(); ani()">
+        </div>
+    </div>
+    <section class="upgrades">
+        <h2 class="upgrades__title">Liste des ameliorations:</h2>
+        <div class="upgrades__list">
+            <div class="upgrades__list_upgrade click" onclick="auto()">
+                <h3 class="upgrades__list_upgrade_title">Autoclick</h3>
+                <p class="upgrades__list_upgrade_price" id="pAuto"></p>
+                <p class="upgrades__list_upgrade_count" id="auto">0</p>
+            </div>
+            <div class="upgrades__list_upgrade grandma" onclick="grandma()">
+                <h3 class="upgrades__list_upgrade_title">Mere Grand</h3>
+                <p id="grandma">0</p>
+            </div>
+            <div class="upgrades__list_upgrade farmland" onclick="farm()">
+                <h3 class="upgrades__list_upgrade_title">Le potager</h3>
+                <p id="farm">0</p>
+            </div>
+            <div class="upgrades__list_upgrade factory" onclick="factory()">
+                <h3 class="upgrades__list_upgrade_title">L'usine</h3>
+                <p id="factory">0</p>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

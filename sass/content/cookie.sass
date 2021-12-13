@@ -1,0 +1,31 @@
+@keyframes clickReduce
+    0%
+        width: 20rem
+    50%
+        width: 15rem
+    100%
+        width: 20rem
+
+
+.cookies
+    font-family: "Poppins", sans-serif
+    display: flex
+    flex-direction: column
+    margin-top: 3rem 
+    width: 69vw
+    &__textinfo
+        text-align: center
+        &_title
+            font-size: 3rem
+        &_cps
+    &__cookie
+        display: flex
+        align-items: center 
+        justify-content: center
+        height: 90vh
+        &_img
+            height: 20rem
+            cursor: pointer
+
+.animation
+    animation: clickReduce 0.2s;

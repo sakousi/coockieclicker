@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@keyframes clickReduce {
+  0% {
+    width: 20rem;
+  }
+  50% {
+    width: 15rem;
+  }
+  100% {
+    width: 20rem;
+  }
+}
+
+.cookies {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  width: 69vw;
+}
+
+.cookies__textinfo {
+  text-align: center;
+}
+
+.cookies__textinfo_title {
+  font-size: 3rem;
+}
+
+.cookies__cookie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+.cookies__cookie_img {
+  height: 20rem;
+  cursor: pointer;
+}
+
+.animation {
+  animation: clickReduce 0.2s;
+}
+
+.upgrades {
+  width: 30vw;
+  margin-top: 3rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.upgrades__title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.upgrades__list {
+  user-select: none;
+}
+
+.upgrades__list_upgrade {
+  border: 1px solid black;
+  padding: 2rem;
+  margin: .25rem;
+  cursor: pointer;
+}
+
+.upgrades__list_upgrade_title {
+  font-size: 1.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
